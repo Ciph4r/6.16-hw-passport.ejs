@@ -1,0 +1,14 @@
+
+    <link rel="stylesheet" href="css/userinfo.css">
+
+    <div id= 'userbanner'>
+        <div >
+            <% if (user) { %>
+            <h1>You are now logged in as <%= user.name %> </h1>
+            <% } %>
+        </div>
+        <div id = 'box2'></div>
+        <div id ='logout'>
+            <a href="/logout">Logout</a>
+        </div>
+    </div>

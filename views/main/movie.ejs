@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js"> <!--<![endif]-->
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title></title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="css/movie.css">
+    </head>
+    <body>
+        <header>
+            Random Profile
+        </header>
+        <%- include('../partial/userinfo') %> 
+        <div id ='container'>
+            <% data.forEach(movie => { %>
+                <div id = 'main'>
+                    <div id ='movie-poster'>
+                        <img id = 'movie-img' src="<%= `https://image.tmdb.org/t/p/w500${movie.poster_path}` %> " alt="..." />
+                    </div>
+                    <div>
+                        <div id='info'>
+                            <div>
+                                <h2 id = 'movie-name'><%= movie.title %> </h2>
+                            </div>
+                            <div>
+                                <p id= 'para'> <%= movie.overview %> </p>
+                            </div>
+                        </div>
+
+                    
+                    </div>
+                </div>
+   
+    
+               
+            <% }) %>
+            </div>
+                <%- include('../partial/footer') %> 
+         
+        <script src="" async defer></script>
+    </body>
+</html>

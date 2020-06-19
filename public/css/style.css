@@ -1,0 +1,37 @@
+body{
+    height: 100vh;
+}
+
+header {
+    height: 100px;
+    width: 100%;
+   justify-content: center;
+   align-items: center;
+    display: flex;
+    background-color: black;
+    color: white;
+    font-size: 70px;
+}
+
+ul{
+    display: grid;
+    grid-template-columns: repeat(6, 1fr );
+    row-gap: 10px;
+    column-gap: 10px;
+ 
+}
+#img {
+    border-radius: 50%;
+}
+
+#name {
+    list-style-type: none;
+
+}
+
+#container {
+    background-color: black;
+    text-align: center;
+    color: white;
+    width: 200px;
+}
